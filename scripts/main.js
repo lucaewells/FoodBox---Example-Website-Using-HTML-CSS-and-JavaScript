@@ -39,7 +39,7 @@ function buildSmallScreenMenu() {
     mobileSlot.appendChild(pocketMenu);
 
     // Learning material p.588-p.599 introduces the SlickNav idea. This is a
-    // small homemade version: not fancy, but easier to read in an assessment.
+    // small homemade version: not fancy, but easier to read while practising.
     menuButton.addEventListener("click", function () {
         var isOpen = pocketMenu.classList.toggle("open");
         menuButton.setAttribute("aria-expanded", String(isOpen));
