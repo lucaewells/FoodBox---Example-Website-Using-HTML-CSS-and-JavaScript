@@ -1,17 +1,30 @@
 <!DOCTYPE html>
+
+<!-- This top section is a repeat of the other pages 
+ (which already contain comments as to which decisions have been made, 
+ as these are all static HTML pages) 
+ Please scroll down to the "main section for the contact_us page" section, which 
+ contains new comments specific to this page.
+ -->
+
 <html lang="en">
+
 <head>
+    
     <meta charset="utf-8">
-    <!-- Learning material p.584 shows the viewport meta tag for responsive work. -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Contact FoodBox and register for produce box updates or community events.">
     <meta name="keywords" content="FoodBox contact, register FoodBox, produce box updates, delivery scheduling">
+    
     <title>Contact Us and Register | FoodBox</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/slicknav.css">
     <script src="scripts/main.js" defer></script>
+
 </head>
+
 <body>
+    
     <header class="site_header">
         <a class="logo_link" href="index.html">
             <img src="images/foodbox_logo.png" alt="FoodBox logo with a basket of fruit and vegetables">
@@ -20,7 +33,9 @@
         <p class="tagline">Fresh, local, sustainable food for every household.</p>
     </header>
 
+    
     <nav id="mobilemenu" aria-label="Mobile menu"></nav>
+    
     <nav id="nav_menu" aria-label="Main navigation">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -44,20 +59,26 @@
         </ul>
     </nav>
 
+<!-- main section for the contact_us page -->
+
     <div class="page_grid">
         <main>
+            
             <section aria-labelledby="contact_heading">
                 <h1 id="contact_heading">Contact us and register</h1>
                 <p class="intro">Use this form to sign up for FoodBox updates, request a delivery day or register interest in events.</p>
+                <!-- Delivery note provides important information to the user before they fill in the form -->
+                <!-- This form uses 'GET' method to submit data to register.html, where it's displayed -->
                 <p><strong>Delivery note:</strong> FoodBox delivery is limited to UK addresses for the time being.</p>
             </section>
-
+<!-- 'novalidate' disables browser's default validation as custom validation is handled by JavaScript -->
             <form action="register.html" method="get" name="member_form" id="member_form" novalidate>
-                <!-- Learning material p.146-p.147 shows labels, inputs and submit/reset buttons. -->
+                <!-- Learning material (under slides "Table and Form") shows labels, inputs and submit/reset buttons which have been used -->
                 <fieldset>
                     <legend>Your details</legend>
 
                     <label for="first_name">First name:</label>
+                    <!-- 'placeholder' in this section provides a hint to the user -->
                     <input type="text" name="first_name" id="first_name" placeholder="Luca">
                     <span class="error_message"></span>
 
@@ -70,17 +91,19 @@
                     <span class="error_message"></span>
 
                     <label for="email">Email address:</label>
+                    <!-- Email required field with format validation (uses regex in JS) -->
                     <input type="email" name="email" id="email" placeholder="name@example.com">
                     <span class="error_message"></span>
 
                     <label for="phone">Mobile number:</label>
+                    <!-- formatted for UK phone numbers-->
                     <input type="tel" name="phone" id="phone" inputmode="tel" placeholder="07456 999999" title="Use a UK mobile number, for example 07456 999999">
                     <span class="error_message"></span>
                 </fieldset>
 
                 <fieldset>
                     <legend>FoodBox choices</legend>
-
+<!-- Membership plan: dropdown select, required field -->
                     <label for="plan">Membership plan:</label>
                     <select name="plan" id="plan">
                         <option value="">Select a plan</option>
@@ -93,6 +116,7 @@
                     <label for="delivery_day">Preferred delivery day:</label>
                     <select name="delivery_day" id="delivery_day">
                         <option value="">Select a day</option>
+                        <!-- included all days of the week for delivery-->
                         <option value="Monday">Monday</option>
                         <option value="Tuesday">Tuesday</option>
                         <option value="Wednesday">Wednesday</option>
@@ -100,10 +124,12 @@
                         <option value="Friday">Friday</option>
                         <option value="Saturday">Saturday</option>
                         <option value="Sunday">Sunday</option>
+
                     </select>
                     <span class="error_message"></span>
 
                     <p class="summary_panel" id="plan_summary">Choose a box to see the weekly total.</p>
+                    <!-- checkbox functionality included below-->
 
                     <label class="option_label"><input type="checkbox" name="updates" value="produce"> Seasonal produce updates</label>
                     <label class="option_label"><input type="checkbox" name="updates" value="events"> Community event invitations</label>
@@ -112,17 +138,19 @@
 
                     <label for="comments">Optional comments:</label>
                     <textarea name="comments" id="comments" rows="4" placeholder="Tell us about access needs, delivery notes or workshop interests."></textarea>
-
+<!-- 'option_label' class provides consistent styling (normal font weight) -->
+ <!--  JavaScript validates that at least one checkbox is selected -->
                     <label class="option_label"><input type="checkbox" name="permission" id="permission" value="yes"> FoodBox may contact me about my registration.</label>
                     <span class="error_message" id="permission_error"></span>
                 </fieldset>
-
+<!-- Form status message is hidden by default, shown when validation fails -->
+                <!--  role="alert" ensures screen readers announce the error message immediately -->
                 <p id="form_status" class="summary_panel hidden" role="alert"></p>
                 <input type="submit" value="Register">
                 <input type="reset" value="Reset">
             </form>
         </main>
-
+<!-- similar in style to the sidebars on all of the other pages -->
         <aside aria-labelledby="contact_links_heading">
             <h2 id="contact_links_heading">Before you register</h2>
             <ul>
@@ -135,9 +163,11 @@
     </div>
 
     <footer class="site_footer">
-        <!-- Learning material p.663 shows the &copy; character entity used here. -->
+    
         <p>&copy; 2026 FoodBox Urban Agriculture Network</p>
         <p>Fresh, local, sustainable food for every household.</p>
     </footer>
+
 </body>
+
 </html>

@@ -1,31 +1,44 @@
 <!DOCTYPE html>
+<!-- Sets the language for the page , helps screen readers and browsers with translation -->
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <!-- Learning material p.584 shows the viewport meta tag for responsive work. -->
+    
+    <!-- Learning material shows the viewport meta tag for responsive work -->
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--  Description meta tag used by search engines  -->
     <meta name="description" content="Compare FoodBox produce box services, membership plans and seasonal crop updates.">
+    <!-- Keywords meta tag used to be used primarily for search engines, but doesn't seem to do used nowadays. I have included it just to be on the safe side -->
     <meta name="keywords" content="FoodBox services, produce box prices, CSA membership, crop availability">
     <title>Boxes and Services | FoodBox</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/slicknav.css">
+    <!-- JavaScript is deferred to load after HTML is parsed, as it can improve performance -->
     <script src="scripts/main.js" defer></script>
 </head>
+
 <body>
     <header class="site_header">
+        <!-- Logo link wraps the logo image and company name, making both clickable -->
         <a class="logo_link" href="index.html">
-            <img src="images/foodbox_logo.png" alt="FoodBox logo with a basket of fruit and vegetables">
+            <img src="images/foodbox_logo.png" alt="FoodBox logo with a basket of fruit and veggies">
+            <!-- Company name uses a span so it can be styled differently from other text -->
             <span class="company_name">FoodBox</span>
         </a>
         <p class="tagline">Fresh, local, sustainable food for every household.</p>
+
     </header>
 
     <nav id="mobilemenu" aria-label="Mobile menu"></nav>
     <nav id="nav_menu" aria-label="Main navigation">
+
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about_us.html">About Us</a></li>
             <li>
+                <!--This is the Services page, so the parent link has 'current' but sub items don't -->
                 <a href="services.html" class="current">Boxes</a>
                 <ul>
                     <li><a href="services.html#plans">Membership Plans</a></li>
@@ -42,72 +55,86 @@
             <li><a href="contact_us.html">Contact Us</a></li>
             <li><a href="register.html">Register</a></li>
         </ul>
+
+
     </nav>
 
     <div class="page_grid">
+
         <main>
+
             <section aria-labelledby="services_heading">
+                <!-- h1 is the main heading for the page (only one h1 per page) -->
                 <h1 id="services_heading">Services and produce boxes</h1>
+                <!-- Intro paragraph uses a class for special styling (slightly larger text) -->
                 <p class="intro">FoodBox provides weekly veg and fruit boxes, hydroponic farm tours, urban gardening kits and CSA memberships.</p>
             </section>
 
             <section id="plans" aria-labelledby="plans_heading">
                 <h2 id="plans_heading">Membership plans</h2>
-                <!-- Learning material p.122-p.134 covers table structure, captions and styling. -->
+                <!-- Learning material covers table structure, captions and styling -->
                 <figure>
+
                     <figcaption>Product list and weekly prices</figcaption>
+                    
+                    <!-- The below table displays the three membership plans as specified in the assignment brief -->
+
                     <table>
                         <thead>
                             <tr>
+                                <!-- scope="col" indicates these are column headers (for accessibility reasons) -->
                                 <th scope="col">Plan</th>
                                 <th scope="col">Best for</th>
                                 <th scope="col">Included items</th>
+                                <!-- class="price" right aligns numeric data (styled in CSS) -->
                                 <th scope="col" class="price">Price</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
+                                <!-- scope "row" indicates this is a row header (for accessibility) -->
                                 <th scope="row">Mini Harvest Box</th>
                                 <td>Individuals</td>
-                                <td>6-8 seasonal produce items</td>
+                                <td>6 to 8 seasonal produce items </td>
+                                <!-- &pound is the HTML entity for the pound sign -->
                                 <td class="price">&pound;11.99/week</td>
                             </tr>
                             <tr>
                                 <th scope="row">Family Farm Box</th>
                                 <td>Families</td>
-                                <td>12-14 fresh items plus recipe cards</td>
+                                <td>12 to 14 fresh items plus recipe cards</td>
                                 <td class="price">&pound;19.99/week</td>
+
                             </tr>
                             <tr>
                                 <th scope="row">Urban Harvest Premium</th>
                                 <td>Large households and keen growers</td>
-                                <td>Large boxes, monthly workshop access and grow-kit discounts</td>
+                                <td>Large boxes, monthly workshop access and grow kit discounts</td>
                                 <td class="price">&pound;29.99/week</td>
                             </tr>
                         </tbody>
+                        <!-- Table foot is summary row at the bottom of the table, I have chosen to include this as it works nicely stylistically  -->
                         <tfoot>
                             <tr>
+                                <!-- colspan is "3" as we only need a cell that spans three columns -->
                                 <th scope="row" colspan="3">Entry plan from</th>
                                 <td class="price">&pound;11.99/week</td>
                             </tr>
                         </tfoot>
                     </table>
+
                 </figure>
+
             </section>
 
-            <section id="availability" aria-labelledby="availability_heading">
-                <h2 id="availability_heading">Crop availability updates</h2>
-                <ul>
-                    <li>Spring greens, herbs and salad leaves are currently high availability.</li>
-                    <li>Tomatoes and soft fruit move into the premium box when local harvests are strong.</li>
-                    <li>Delivery scheduling is requested during registration and confirmed by the logistics team.</li>
-                </ul>
-            </section>
-
+            
+<!-- Testimonials section showing feedback from satisfied customers, as per assignment requirements -->
             <section aria-labelledby="happy_heading">
+
                 <h2 id="happy_heading">Satisfied users</h2>
                 <article class="quote_item">
                     <h3>Helen S.</h3>
+                    <!-- &ldquo and &rdquo are HTML entities for left and right double quotation marks -->
                     <p>&ldquo;Everything tastes fresher than supermarket produce!&rdquo;</p>
                 </article>
                 <article class="quote_item">
@@ -118,23 +145,31 @@
                     <h3>Sam D.</h3>
                     <p>&ldquo;Reliable weekly deliveries with great variety.&rdquo;</p>
                 </article>
+
             </section>
+
         </main>
+        
+        <!-- Sidebar  contains supplementary links specific to this page -->
 
         <aside aria-labelledby="service_links_heading">
+
             <h2 id="service_links_heading">Useful service links</h2>
             <ul>
                 <li><a href="contact_us.html">Start a membership</a></li>
                 <li><a href="events_news.html#promotions">See current promotions</a></li>
                 <li><a href="about_us.html">Meet the farm team</a></li>
             </ul>
+
         </aside>
     </div>
 
     <footer class="site_footer">
-        <!-- Learning material p.663 shows the &copy; character entity used here. -->
+        <!-- Learning material shows the &copy; character entity used here -->
         <p>&copy; 2026 FoodBox Urban Agriculture Network</p>
         <p>Fresh, local, sustainable food for every household.</p>
     </footer>
+
 </body>
+
 </html>

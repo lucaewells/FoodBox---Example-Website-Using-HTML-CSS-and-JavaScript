@@ -29,13 +29,11 @@ without a build step.
 - `styles/` - shared responsive styling
 - `scripts/` - plain JavaScript for menu, validation, and form output
 - `images/` - supplied FoodBox images
-- `docs/` - short documentation in HTML and PDF
-- `FoodBox_Website_Submission.zip` - packaged website files
+- `docs/` - documentation PDF
 
 ## Running Locally
 
-Extract the ZIP first if using the packaged files. Then open `index.html`
-directly in a browser.
+Open `index.html` directly in a browser.
 
 ## Notes
 

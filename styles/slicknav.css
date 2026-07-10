@@ -1,18 +1,20 @@
 /* Small local SlickNav-style menu.
-   Learning material p.588-p.599 covers SlickNav/mobile menu behaviour. */
+   Learning material covers SlickNav/mobile menu behaviour.
+   Also, I have chosen different variations of green as the theme colours, because it fits nicely with the images of fruit/veggies */
 .slicknav_btn {
     display: block;
     width: 100%;
     padding: .85em 1em;
     border: 0;
-    background-color: #285c31;
+    background-color: #296232;
     color: white;
     text-align: left;
     font-weight: bold;
+    
 }
 
 .slicknav_menu {
-    background-color: #285c31;
+    background-color: #265c2f;
 }
 
 .slicknav_nav {
@@ -30,7 +32,7 @@
     margin: 0;
     padding-left: 1em;
     list-style: none;
-    background-color: #356f39;
+    background-color: #337137;
 }
 
 .slicknav_nav a {
@@ -47,6 +49,6 @@
 
 .slicknav_nav a:hover,
 .slicknav_nav a:focus {
-    background-color: #23796d;
+    background-color: #20796d;
     color: white;
 }

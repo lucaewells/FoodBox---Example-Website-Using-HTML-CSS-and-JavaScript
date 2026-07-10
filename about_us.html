@@ -1,20 +1,34 @@
 <!DOCTYPE html>
+
+<!-- This top section is a repeat of the other pages 
+ (which already contain comments as to which decisions have been made, 
+ as these are all static HTML pages) 
+ Please scroll down to the "main section" section below, which 
+ contains new comments specific to this page.
+ -->
+
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <!-- Learning material p.584 shows the viewport meta tag for responsive work. -->
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <meta name="description" content="Learn about FoodBox, its staff and its urban farming mission.">
+
     <meta name="keywords" content="FoodBox about us, urban agriculture, local farms, hydroponics">
+
     <title>About Us | FoodBox</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/slicknav.css">
     <script src="scripts/main.js" defer></script>
+
 </head>
+
 <body>
     <header class="site_header">
         <a class="logo_link" href="index.html">
-            <img src="images/foodbox_logo.png" alt="FoodBox logo with a basket of fruit and vegetables">
+            <img src="images/foodbox_logo.png" alt="FoodBox logo with a basket of fruit and vegggies">
             <span class="company_name">FoodBox</span>
         </a>
         <p class="tagline">Fresh, local, sustainable food for every household.</p>
@@ -44,14 +58,17 @@
         </ul>
     </nav>
 
+    <!-- MAIN CONTENT: two column grid (main + aside) -->
+
     <div class="page_grid">
         <main>
+            
             <section aria-labelledby="about_heading">
                 <h1 id="about_heading">About FoodBox</h1>
-                <p class="intro">FoodBox started as a rooftop farming experiment in 2019 and has grown into a full-scale urban agriculture network supplying fresh produce to city households.</p>
-                <p>The business collaborates with over 40 micro-farms using hydroponics, vertical growing and pesticide-free practices. Its mission is to shorten the food supply chain and make sustainable eating accessible to everyone.</p>
+                <p class="intro">FoodBox started as a rooftop farming experiment in 2019 and has grown into a full scale agriculture network supplying fresh produce to city households.</p>
+                <p>The business collaborates with over 40 micro farms using hydroponics, vertical growing and pesticide-free practices. Our mission is to shorten the food supply chain and make sustainable eating accessible to everyone.</p>
             </section>
-
+<!-- image given as part of the assignment requirements, linked below: -->
             <figure>
                 <img class="produce_image" src="images/foodbox_produce.png" alt="Fresh herbs, chilli, lime and coriander seeds on a stone surface">
                 <figcaption>Seasonal produce grown through FoodBox farm partners</figcaption>
@@ -59,7 +76,9 @@
 
             <section aria-labelledby="staff_heading">
                 <h2 id="staff_heading">Staff members</h2>
+                <!-- The .staff_member class provides consistent styling (green left border, background) -->
                 <article class="staff_member">
+                    <!-- the below is information about the founders pasted from the assignment document-->
                     <h3>Lucas Fernandez, Founder and Head Grower</h3>
                     <p>Oversees crop planning, farm partnerships and sustainable growing methods.</p>
                 </article>
@@ -71,9 +90,11 @@
                     <h3>Clara Jennings, Community Support Specialist</h3>
                     <p>Coordinates workshops, customer communication and local farming events.</p>
                 </article>
+            
             </section>
+        
         </main>
-
+<!-- This sidebar section is a repeat of the other pages (which already contain comments as to which decisions have been made, as these are all static HTML pages) -->
         <aside aria-labelledby="about_links_heading">
             <h2 id="about_links_heading">More from FoodBox</h2>
             <ul>
@@ -85,9 +106,11 @@
     </div>
 
     <footer class="site_footer">
-        <!-- Learning material p.663 shows the &copy; character entity used here. -->
+        
         <p>&copy; 2026 FoodBox Urban Agriculture Network</p>
         <p>Fresh, local, sustainable food for every household.</p>
     </footer>
+
 </body>
+
 </html>
