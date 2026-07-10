@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- Learning material p.584 shows the viewport meta tag for responsive work. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="FoodBox community events, farm workshops, promotions and seasonal produce news.">
+    <meta name="keywords" content="FoodBox events, hydroponic workshop, harvest festival, veg box discount">
+    <title>Events and News | FoodBox</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header class="site_header">
+        <a class="logo_link" href="index.html">
+            <img src="images/foodbox_logo.png" alt="FoodBox logo with a basket of fruit and vegetables">
+            <span class="company_name">FoodBox</span>
+        </a>
+        <p class="tagline">Fresh, local, sustainable food for every household.</p>
+    </header>
+
+    <nav id="mobilemenu" aria-label="Mobile menu"></nav>
+    <nav id="nav_menu" aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li>
+                <a href="services.html">Boxes</a>
+                <ul>
+                    <li><a href="services.html#plans">Membership Plans</a></li>
+                    <li><a href="services.html#availability">Crop Updates</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="events_news.html" class="current">Events/News</a>
+                <ul>
+                    <li><a href="events_news.html#events">Events</a></li>
+                    <li><a href="events_news.html#promotions">Promotions</a></li>
+                </ul>
+            </li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+
+    <div class="page_grid">
+        <main>
+            <section aria-labelledby="news_heading">
+                <h1 id="news_heading">Events and news</h1>
+                <p class="intro">FoodBox uses workshops and seasonal updates to keep customers connected with local growing.</p>
+            </section>
+
+            <section id="events" aria-labelledby="events_heading">
+                <h2 id="events_heading">Community events</h2>
+                <article class="news_item">
+                    <h3>Spring Harvest Festival</h3>
+                    <p>Meet partner farms, sample fresh salad crops and learn how FoodBox reduces food miles.</p>
+                </article>
+                <article class="news_item">
+                    <h3>Hydroponic Farming Workshops</h3>
+                    <p>Practical sessions for customers who want to understand vertical growing and water-efficient systems.</p>
+                </article>
+            </section>
+
+            <section id="promotions" aria-labelledby="promotions_heading">
+                <h2 id="promotions_heading">Promotions and announcements</h2>
+                <article class="news_item">
+                    <h3>Winter Discount on Veg Boxes</h3>
+                    <p>New members can ask for the winter discount when registering for a weekly subscription.</p>
+                </article>
+                <article class="news_item">
+                    <h3>New Seasonal Produce Announcements</h3>
+                    <p>Crop notices are published when local farms add new produce to the FoodBox network.</p>
+                </article>
+            </section>
+        </main>
+
+        <aside aria-labelledby="event_links_heading">
+            <h2 id="event_links_heading">Event actions</h2>
+            <ul>
+                <li><a href="contact_us.html">Register interest</a></li>
+                <li><a href="services.html#availability">Check seasonal produce</a></li>
+                <li><a href="about_us.html">Read about the team</a></li>
+            </ul>
+            <p>Click an event heading to tuck away or reopen its details.</p>
+        </aside>
+    </div>
+
+    <footer class="site_footer">
+        <!-- Learning material p.663 shows the &copy; character entity used here. -->
+        <p>&copy; 2026 FoodBox Urban Agriculture Network</p>
+        <p>Fresh, local, sustainable food for every household.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>FoodBox Documentation</title>
+    <style>
+        body {
+            width: 90%;
+            max-width: 820px;
+            margin: 2em auto;
+            font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
+            line-height: 1.5;
+            color: #243126;
+        }
+        h1, h2 {
+            color: #285c31;
+        }
+    </style>
+</head>
+<body>
+    <h1>FoodBox Web Application Documentation</h1>
+    <p>The website was implemented as a static HTML, CSS and JavaScript application so it can be opened directly in a browser without Live Server. I used six linked pages: Home, About Us, Boxes and Services, Events/News, Contact Us and Register. This covers the required core pages while separating the form confirmation page from the form itself.</p>
+
+    <p>The layout follows the module examples: a semantic header, nav, main content area, aside and footer are used across the pages. The page width is fluid at 95% with a maximum width of 1200px. The navigation is a two-tier horizontal menu on desktop and changes to a small mobile menu below 700px. At 950px the font size is reduced to 85%, matching the brief.</p>
+
+    <p>The visual design uses the supplied FoodBox images and a green, orange and neutral colour palette to reflect produce, farming and delivery. I avoided decorative effects and changed the typography to Trebuchet MS, Tahoma and Arial. Tables use caption, thead, tbody, tfoot and scoped headings for accessibility.</p>
+
+    <p>The registration form collects name, UK address, email, UK mobile number, membership plan, preferred delivery day, update preferences and comments. JavaScript validates required fields, email format, UK mobile format, selected plan, delivery day, update choices and contact permission before allowing submission. If valid, the data is displayed on register.html using query string values. An edge case is handled when register.html is opened without submitted data, where a clear no-data message is shown.</p>
+</body>
+</html>

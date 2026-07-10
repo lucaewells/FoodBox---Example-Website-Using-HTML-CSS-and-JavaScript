@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- Learning material p.584 shows the viewport meta tag for responsive work. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact FoodBox and register for produce box updates or community events.">
+    <meta name="keywords" content="FoodBox contact, register FoodBox, produce box updates, delivery scheduling">
+    <title>Contact Us and Register | FoodBox</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header class="site_header">
+        <a class="logo_link" href="index.html">
+            <img src="images/foodbox_logo.png" alt="FoodBox logo with a basket of fruit and vegetables">
+            <span class="company_name">FoodBox</span>
+        </a>
+        <p class="tagline">Fresh, local, sustainable food for every household.</p>
+    </header>
+
+    <nav id="mobilemenu" aria-label="Mobile menu"></nav>
+    <nav id="nav_menu" aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li>
+                <a href="services.html">Boxes</a>
+                <ul>
+                    <li><a href="services.html#plans">Membership Plans</a></li>
+                    <li><a href="services.html#availability">Crop Updates</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="events_news.html">Events/News</a>
+                <ul>
+                    <li><a href="events_news.html#events">Events</a></li>
+                    <li><a href="events_news.html#promotions">Promotions</a></li>
+                </ul>
+            </li>
+            <li><a href="contact_us.html" class="current">Contact Us</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+
+    <div class="page_grid">
+        <main>
+            <section aria-labelledby="contact_heading">
+                <h1 id="contact_heading">Contact us and register</h1>
+                <p class="intro">Use this form to sign up for FoodBox updates, request a delivery day or register interest in events.</p>
+                <p><strong>Delivery note:</strong> FoodBox delivery is limited to UK addresses for the time being.</p>
+            </section>
+
+            <form action="register.html" method="get" name="member_form" id="member_form" novalidate>
+                <!-- Learning material p.146-p.147 shows labels, inputs and submit/reset buttons. -->
+                <fieldset>
+                    <legend>Your details</legend>
+
+                    <label for="first_name">First name:</label>
+                    <input type="text" name="first_name" id="first_name" placeholder="Luca">
+                    <span class="error_message"></span>
+
+                    <label for="last_name">Last name:</label>
+                    <input type="text" name="last_name" id="last_name" placeholder="Edward">
+                    <span class="error_message"></span>
+
+                    <label for="address">Delivery address:</label>
+                    <input type="text" name="address" id="address" placeholder="City University, London">
+                    <span class="error_message"></span>
+
+                    <label for="email">Email address:</label>
+                    <input type="email" name="email" id="email" placeholder="name@example.com">
+                    <span class="error_message"></span>
+
+                    <label for="phone">Mobile number:</label>
+                    <input type="tel" name="phone" id="phone" inputmode="tel" placeholder="07456 999999" title="Use a UK mobile number, for example 07456 999999">
+                    <span class="error_message"></span>
+                </fieldset>
+
+                <fieldset>
+                    <legend>FoodBox choices</legend>
+
+                    <label for="plan">Membership plan:</label>
+                    <select name="plan" id="plan">
+                        <option value="">Select a plan</option>
+                        <option value="mini">Mini Harvest Box</option>
+                        <option value="family">Family Farm Box</option>
+                        <option value="premium">Urban Harvest Premium</option>
+                    </select>
+                    <span class="error_message"></span>
+
+                    <label for="delivery_day">Preferred delivery day:</label>
+                    <select name="delivery_day" id="delivery_day">
+                        <option value="">Select a day</option>
+                        <option value="Monday">Monday</option>
+                        <option value="Tuesday">Tuesday</option>
+                        <option value="Wednesday">Wednesday</option>
+                        <option value="Thursday">Thursday</option>
+                        <option value="Friday">Friday</option>
+                        <option value="Saturday">Saturday</option>
+                        <option value="Sunday">Sunday</option>
+                    </select>
+                    <span class="error_message"></span>
+
+                    <p class="summary_panel" id="plan_summary">Choose a box to see the weekly total.</p>
+
+                    <label class="option_label"><input type="checkbox" name="updates" value="produce"> Seasonal produce updates</label>
+                    <label class="option_label"><input type="checkbox" name="updates" value="events"> Community event invitations</label>
+                    <label class="option_label"><input type="checkbox" name="updates" value="payments"> Subscription payment reminders</label>
+                    <span class="error_message" id="updates_error"></span>
+
+                    <label for="comments">Optional comments:</label>
+                    <textarea name="comments" id="comments" rows="4" placeholder="Tell us about access needs, delivery notes or workshop interests."></textarea>
+
+                    <label class="option_label"><input type="checkbox" name="permission" id="permission" value="yes"> FoodBox may contact me about my registration.</label>
+                    <span class="error_message" id="permission_error"></span>
+                </fieldset>
+
+                <p id="form_status" class="summary_panel hidden" role="alert"></p>
+                <input type="submit" value="Register">
+                <input type="reset" value="Reset">
+            </form>
+        </main>
+
+        <aside aria-labelledby="contact_links_heading">
+            <h2 id="contact_links_heading">Before you register</h2>
+            <ul>
+                <li><a href="services.html#plans">Review plan prices</a></li>
+                <li><a href="events_news.html#events">Check workshop options</a></li>
+                <li><a href="about_us.html">See who runs FoodBox</a></li>
+            </ul>
+            <p>Required fields are validated before the form is allowed to submit.</p>
+        </aside>
+    </div>
+
+    <footer class="site_footer">
+        <!-- Learning material p.663 shows the &copy; character entity used here. -->
+        <p>&copy; 2026 FoodBox Urban Agriculture Network</p>
+        <p>Fresh, local, sustainable food for every household.</p>
+    </footer>
+</body>
+</html>

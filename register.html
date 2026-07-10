@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- Learning material p.584 shows the viewport meta tag for responsive work. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="FoodBox registration confirmation page.">
+    <meta name="keywords" content="FoodBox registration, FoodBox confirmation, produce box sign up">
+    <title>Registration Details | FoodBox</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header class="site_header">
+        <a class="logo_link" href="index.html">
+            <img src="images/foodbox_logo.png" alt="FoodBox logo with a basket of fruit and vegetables">
+            <span class="company_name">FoodBox</span>
+        </a>
+        <p class="tagline">Fresh, local, sustainable food for every household.</p>
+    </header>
+
+    <nav id="mobilemenu" aria-label="Mobile menu"></nav>
+    <nav id="nav_menu" aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li>
+                <a href="services.html">Boxes</a>
+                <ul>
+                    <li><a href="services.html#plans">Membership Plans</a></li>
+                    <li><a href="services.html#availability">Crop Updates</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="events_news.html">Events/News</a>
+                <ul>
+                    <li><a href="events_news.html#events">Events</a></li>
+                    <li><a href="events_news.html#promotions">Promotions</a></li>
+                </ul>
+            </li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="register.html" class="current">Register</a></li>
+        </ul>
+    </nav>
+
+    <div class="page_grid">
+        <main>
+            <section aria-labelledby="register_heading">
+                <h1 id="register_heading">Registration details</h1>
+                <p class="intro">If the form has been submitted, the details are displayed below. This keeps the example fully static and able to run directly in a browser.</p>
+            </section>
+
+            <section id="submitted_details" aria-live="polite"></section>
+            <p><a class="button_link" href="contact_us.html">Return to the form</a></p>
+        </main>
+
+        <aside aria-labelledby="register_links_heading">
+            <h2 id="register_links_heading">Next steps</h2>
+            <ul>
+                <li><a href="services.html#plans">Check your selected plan</a></li>
+                <li><a href="events_news.html">Browse events and promotions</a></li>
+                <li><a href="index.html">Return to the homepage</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer class="site_footer">
+        <!-- Learning material p.663 shows the &copy; character entity used here. -->
+        <p>&copy; 2026 FoodBox Urban Agriculture Network</p>
+        <p>Fresh, local, sustainable food for every household.</p>
+    </footer>
+</body>
+</html>

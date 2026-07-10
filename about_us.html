@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- Learning material p.584 shows the viewport meta tag for responsive work. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Learn about FoodBox, its staff and its urban farming mission.">
+    <meta name="keywords" content="FoodBox about us, urban agriculture, local farms, hydroponics">
+    <title>About Us | FoodBox</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header class="site_header">
+        <a class="logo_link" href="index.html">
+            <img src="images/foodbox_logo.png" alt="FoodBox logo with a basket of fruit and vegetables">
+            <span class="company_name">FoodBox</span>
+        </a>
+        <p class="tagline">Fresh, local, sustainable food for every household.</p>
+    </header>
+
+    <nav id="mobilemenu" aria-label="Mobile menu"></nav>
+    <nav id="nav_menu" aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_us.html" class="current">About Us</a></li>
+            <li>
+                <a href="services.html">Boxes</a>
+                <ul>
+                    <li><a href="services.html#plans">Membership Plans</a></li>
+                    <li><a href="services.html#availability">Crop Updates</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="events_news.html">Events/News</a>
+                <ul>
+                    <li><a href="events_news.html#events">Events</a></li>
+                    <li><a href="events_news.html#promotions">Promotions</a></li>
+                </ul>
+            </li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+
+    <div class="page_grid">
+        <main>
+            <section aria-labelledby="about_heading">
+                <h1 id="about_heading">About FoodBox</h1>
+                <p class="intro">FoodBox started as a rooftop farming experiment in 2019 and has grown into a full-scale urban agriculture network supplying fresh produce to city households.</p>
+                <p>The business collaborates with over 40 micro-farms using hydroponics, vertical growing and pesticide-free practices. Its mission is to shorten the food supply chain and make sustainable eating accessible to everyone.</p>
+            </section>
+
+            <figure>
+                <img class="produce_image" src="images/foodbox_produce.png" alt="Fresh herbs, chilli, lime and coriander seeds on a stone surface">
+                <figcaption>Seasonal produce grown through FoodBox farm partners</figcaption>
+            </figure>
+
+            <section aria-labelledby="staff_heading">
+                <h2 id="staff_heading">Staff members</h2>
+                <article class="staff_member">
+                    <h3>Lucas Fernandez, Founder and Head Grower</h3>
+                    <p>Oversees crop planning, farm partnerships and sustainable growing methods.</p>
+                </article>
+                <article class="staff_member">
+                    <h3>Amira Khalid, Logistics and Delivery Coordinator</h3>
+                    <p>Manages delivery schedules, routing and cold-chain quality.</p>
+                </article>
+                <article class="staff_member">
+                    <h3>Clara Jennings, Community Support Specialist</h3>
+                    <p>Coordinates workshops, customer communication and local farming events.</p>
+                </article>
+            </section>
+        </main>
+
+        <aside aria-labelledby="about_links_heading">
+            <h2 id="about_links_heading">More from FoodBox</h2>
+            <ul>
+                <li><a href="services.html">Weekly produce boxes</a></li>
+                <li><a href="events_news.html#events">Hydroponic workshops</a></li>
+                <li><a href="contact_us.html">Customer support form</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer class="site_footer">
+        <!-- Learning material p.663 shows the &copy; character entity used here. -->
+        <p>&copy; 2026 FoodBox Urban Agriculture Network</p>
+        <p>Fresh, local, sustainable food for every household.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,52 @@
+/* Small local SlickNav-style menu.
+   Learning material p.588-p.599 covers SlickNav/mobile menu behaviour. */
+.slicknav_btn {
+    display: block;
+    width: 100%;
+    padding: .85em 1em;
+    border: 0;
+    background-color: #285c31;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+.slicknav_menu {
+    background-color: #285c31;
+}
+
+.slicknav_nav {
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.slicknav_nav.open {
+    display: block;
+}
+
+.slicknav_nav ul {
+    margin: 0;
+    padding-left: 1em;
+    list-style: none;
+    background-color: #356f39;
+}
+
+.slicknav_nav a {
+    display: block;
+    padding: .75em 1em;
+    color: white;
+    text-decoration: none;
+    border-top: 1px solid rgba(255, 255, 255, .22);
+}
+
+.slicknav_nav a:visited {
+    color: white;
+}
+
+.slicknav_nav a:hover,
+.slicknav_nav a:focus {
+    background-color: #23796d;
+    color: white;
+}
